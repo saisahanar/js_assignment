@@ -1,0 +1,59 @@
+Difference between var, let, and const:
+
+1)var:
+var declarations are globally scoped or function/locally scoped.
+
+The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+
+var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+ex:
+var a=10,//globally scoped
+function newFun(){
+    var hello="hi";//function scoped
+}
+
+var variables can be re-declared and updated
+This means that we can do this within the same scope and won't get an error.
+
+    var greeter = "hey hi";
+    var greeter = "say Hello instead";
+
+2)Let:
+A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+
+So a variable declared in a block with let  is only available for use within that block.
+ex:
+let greet="hi";
+{
+    let hello="hello everyone";
+}
+console.log(greet);//prints hi to console
+console.log(hello);//hello is not defined
+
+*)Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope. So while this will work:
+
+    let greeting = "say Hi";
+    greeting = "say Hello instead";
+this will return an error:
+
+    let greeting = "say Hi";
+    let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared
+Just like var,  a variable declared with let can be updated within its scope. Unlike var, a let variable cannot be re-declared within its scope. So while this will work:
+
+    let greeting = "say Hi";
+    greeting = "say Hello instead";
+this will return an error:
+
+    let greeting = "say Hi";
+    let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been declared
+
+3)const:
+Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.
+const declarations are block scoped
+Like let declarations, const declarations can only be accessed within the block they were declared.
+
+const cannot be updated or re-declared
+This means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. 
+ex:
+const greeting = "say Hi";
+    greeting = "say Hello instead";// error: Assignment to constant variable. 

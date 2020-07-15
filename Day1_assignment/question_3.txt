@@ -1,0 +1,65 @@
+Available data types in JS:
+
+JavaScript variables can hold many data types: numbers, strings, objects and more:
+ex:
+var length=12;//Number datatype
+var name="Joe";//String datatype
+var x= {firstName:"John", lastName:"Doe"}; //objects
+
+1)JavaScript Strings:
+
+A string (or a text string) is a series of characters like "John Doe".
+
+Strings are written with quotes. You can use single or double quotes:
+Example
+var carName1 = "Volvo XC60";   // Using double quotes
+var carName2 = 'Volvo XC60';   // Using single quotes
+
+2)JavaScript Numbers:
+JavaScript has only one type of numbers.
+
+Numbers can be written with, or without decimals:
+
+Example
+var x1 = 34.00;     // Written with decimals
+var x2 = 34;        // Written without decimals
+Extra large or extra small numbers can be written with scientific (exponential) notation:
+
+Example
+var y = 123e5;      // 12300000
+var z = 123e-5;     // 0.00123
+
+3)JavaScript Booleans:
+Booleans can only have two values: true or false.
+
+Example
+var x = 5;
+var y = 5;
+var z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+Booleans are often used in conditional testing.
+
+4)JavaScript Arrays:
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+
+The following code declares (creates) an array called cars, containing three items (car names):
+
+Example
+var cars = ["Saab", "Volvo", "BMW"];
+Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+5)JavaScript Objects:
+JavaScript objects are written with curly braces {}.
+
+Object properties are written as name:value pairs, separated by commas.
+
+Example
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.
+
+
+
+

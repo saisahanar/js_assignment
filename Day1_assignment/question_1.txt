@@ -1,0 +1,32 @@
+Various methods in console functions are:
+
+1)console.log():
+ mainly used to print the output on to the console,whatever has to be print on the console we put that in log().
+ ex:console.log("hi");
+ op:hi
+
+2)console.error():
+used to log error msgs to the console.Useful in testing of code.By default error msgs will be highlighted with red color.
+ex:console.error("this is a error");
+
+3)console.warn():
+used to log warning msg to the console.By default the warning msg will be highlighted with yellow color.
+ex:console.warn("This is warning");
+
+4)console.clear():
+Used to clear the console. The console will be cleared.
+ex:console.clear();
+
+5)console.table():
+This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+ex:console.table({'a':1, 'b':2}); 
+
+6)console.time() and console.timeEnd():
+Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object.
+ex:console.time('time taken'); 
+var person={name="abc",age=15,city="bangalore"};
+console.log(person);
+console.log('%c custom msg','color:blue');
+console.timeEnd('time taken'); 
+
+
